@@ -15,7 +15,8 @@ from streamlit_card import card
 # page configurating
 stl.set_page_config(page_title="Tool",
                     page_icon=":bar_chart:", layout="wide")
-# stl.title("Lests start")
+stl.write('<br>')
+
 stl.markdown(
     '<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
 # File uploader
@@ -29,6 +30,7 @@ if fl is not None:
     # stl.write(df.columns)
 
     # sidebar
+    stl.header("Summary YiW progress of December 2024-Primary YIW")
     stl.sidebar.header("Select Your Filter")
     project = stl.sidebar.selectbox(
 
